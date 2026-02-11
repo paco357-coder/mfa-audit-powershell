@@ -1,4 +1,4 @@
-mfa-audit-powershell
+original-mfa-audit.ps1
 
 #>
 Param
