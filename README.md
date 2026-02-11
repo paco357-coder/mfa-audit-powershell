@@ -10,6 +10,8 @@ Microsoft Graph PowerShell module
 
 Required Graph permissions (Directory.Read.All, AuthenticationMethod.Read.All, etc.)
 
+
+
 MFA Disabled User Audit with PowerShell and Microsoft Graph
 
 This PowerShell script connects to Microsoft Graph and audits Azure AD users to identify accounts without MFA configured.
