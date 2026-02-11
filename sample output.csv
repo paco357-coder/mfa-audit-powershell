@@ -1,0 +1,5 @@
+sample output.csv
+
+DisplayName,UserPrincipalName,MFAStatus
+John Doe,jdoe@company.com,Disabled
+Jane Smith,jsmith@company.com,Disabled
