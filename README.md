@@ -1,29 +1,27 @@
-# mfa-audit-powershell
+# 🔐 MFA Disabled User Audit with PowerShell and Microsoft Graph
 
-This tool helps administrators quickly identify users without configured MFA in Azure AD, improving security posture and compliance.
+This PowerShell tool connects to Microsoft Graph to identify Azure AD users who do **not** have Multi-Factor Authentication (MFA) configured.
 
-Tools needed
+Identifying accounts without MFA is a critical security control for modern cloud environments. This script demonstrates practical **IAM**, **security auditing**, and **automation** using Microsoft Graph and PowerShell.
 
-PowerShell
+---
 
-Microsoft Graph PowerShell module
+## ✅ Prerequisites
 
-Required Graph permissions (Directory.Read.All, AuthenticationMethod.Read.All, etc.)
+- PowerShell 7+ (recommended)  
+- Microsoft Graph PowerShell Module  
+- Required Microsoft Graph permissions:
+  - `User.Read.All`
+  - `Directory.Read.All`
+  - `AuthenticationMethod.Read.All`
 
+> ⚠️ The script is read-only and **does not modify any user accounts**.
 
+---
 
-MFA Disabled User Audit with PowerShell and Microsoft Graph
+## ▶️ Usage
 
-This PowerShell script connects to Microsoft Graph and audits Azure AD users to identify accounts without MFA configured.
+Run the script and display results in the console:
 
-Features
-
-Connects securely to Microsoft Graph
-
-Enumerates all users in the tenant
-
-Checks authentication methods per user
-
-Identifies users without MFA
-
-Optional CSV export for reporting
+```powershell
+.\Get-MFADisabledUsers.ps1
