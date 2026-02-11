@@ -1,3 +1,5 @@
+This tool helps administrators quickly identify users without configured MFA in Azure AD, improving security posture and compliance.
+
 # mfa-audit-powershell
 
 MFA Disabled User Audit with PowerShell and Microsoft Graph
